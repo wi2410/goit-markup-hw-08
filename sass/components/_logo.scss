@@ -1,0 +1,34 @@
+.logo {
+    font-family: var(--secondary-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    color: var(--logo-color);
+    text-decoration: none;
+        &__header {
+            font-family: var(--secondary-font);
+            font-style: normal;
+            font-weight: 700;
+            font-size: 26px;
+            color: var(--logo-color);
+            text-decoration: none;
+            padding-top: 24px;
+            padding-bottom: 25px;
+        } 
+}
+
+.logo--black {
+    font-family: var(--secondary-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    color: var(--primary-text-color);
+}
+
+.logo--white {
+    font-family: var(--secondary-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    color: var(--accent-color);
+}
