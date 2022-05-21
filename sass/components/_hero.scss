@@ -12,10 +12,40 @@
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url('../');
+        url('../../images/mobile/Hero-bcgr-mobile.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+@media screen and (min-resolution: 2dppx) {
+    .hero.section {
+        background-image: url('../../images/mobile/Hero-bcgr-mobile@2x.jpg');
+    }
+}
+
+@media screen and (min-width:768px) {
+    .hero.section {
+        background-image: url('../../images/tablet/Hero-bcgr-tablet.jpg');
+    }
+
+        @media screen and (min-resolution: 2dppx) {
+            .hero.section {
+                background-image: url('../../images/tablet/Hero-bcgr-tablet@2x.jpg');
+            }
+        }
+}
+
+@media screen and (min-width:1200px) {
+    .hero.section {
+        background-image: url('../../images/desktop/img-background.jpg');
+    }
+
+    @media screen and (min-resolution: 2dppx) {
+        .hero.section {
+            background-image: url('../../images/desktop/img-background@2x.jpg');
+        }
+    }
 }
 
 .hero__title {
