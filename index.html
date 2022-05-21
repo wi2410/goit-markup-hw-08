@@ -17,11 +17,19 @@
         <div class="header-nav container">
             <nav class="main-nav">
                 <a class="logo__header" href="./index.html">Web<span class="logo--black">Studio</span></a>
+                <button type="button" class="menu-button" aria-expanded="false" data-menu-button>
+                    <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                        <use class="icon-menu" href="./images/icons.svg#btn-menu"></use>
+                        <use class="icon-cross" href="./images/icons.svg#btn-menu-close"></use>
+                    </svg>
+                </button>
+
                 <ul class="site-nav list">
                     <li class="site-nav__item"><a class="site-nav__link current" href="./index.html">Студия</a></li>
                     <li class="site-nav__item"><a class="site-nav__link" href="./portfolio.html">Портфолио</a></li>
                     <li class="site-nav__item"><a class="site-nav__link" href="#">Контакты</a></li>
                 </ul>
+                
             </nav>
             <ul class="contact">
                 <li class="contact__item"><a class="contact__link" href="mailto:info@devstudio.com">
@@ -254,41 +262,43 @@
            </div>
         </section>
         <section class="clients section">
-            <h2 class="clients__title">Постоянные клиенты</h2>
-            <ul class="client-list">
-
-                <li class="client-list__item"><a href="#" class="client-list__link">
+            <div class="container">
+                <h2 class="clients__title">Постоянные клиенты</h2>
+                <ul class="client-list">
+                
+                    <li class="client-list__item"><a href="#" class="client-list__link">
                             <svg class="client-list__icon" width="106" height="60">
                                 <use href="./images/icons.svg#icon-client-1"></use>
                             </svg>
                         </a></li>
-
-                <li class="client-list__item"><a href="#" class="client-list__link">
-                    <svg class="client-list__icon" width="106" height="60">
-                        <use href="./images/icons.svg#icon-client-2"></use>
-                    </svg>
-                </a></li>
-                <li class="client-list__item"><a href="#" class="client-list__link">
-                    <svg class="client-list__icon" width="106" height="60">
-                        <use href="./images/icons.svg#icon-client-3"></use>
-                    </svg>
-                </a></li>
-                <li class="client-list__item"><a href="#" class="client-list__link">
-                    <svg class="client-list__icon" width="106" height="60">
-                        <use href="./images/icons.svg#icon-client-4"></use>
-                    </svg>
-                </a></li>
-                <li class="client-list__item"><a href="#" class="client-list__link">
-                    <svg class="client-list__icon" width="106" height="60">
-                        <use href="./images/icons.svg#icon-client-5"></use>
-                    </svg>
-                </a></li>
-                <li class="client-list__item"><a href="#" class="client-list__link">
-                    <svg class="client-list__icon" width="106" height="60">
-                    <use href="./images/icons.svg#icon-client-6"></use>
-                    </svg>
-                </a></li>
-            </ul>
+                
+                    <li class="client-list__item"><a href="#" class="client-list__link">
+                            <svg class="client-list__icon" width="106" height="60">
+                                <use href="./images/icons.svg#icon-client-2"></use>
+                            </svg>
+                        </a></li>
+                    <li class="client-list__item"><a href="#" class="client-list__link">
+                            <svg class="client-list__icon" width="106" height="60">
+                                <use href="./images/icons.svg#icon-client-3"></use>
+                            </svg>
+                        </a></li>
+                    <li class="client-list__item"><a href="#" class="client-list__link">
+                            <svg class="client-list__icon" width="106" height="60">
+                                <use href="./images/icons.svg#icon-client-4"></use>
+                            </svg>
+                        </a></li>
+                    <li class="client-list__item"><a href="#" class="client-list__link">
+                            <svg class="client-list__icon" width="106" height="60">
+                                <use href="./images/icons.svg#icon-client-5"></use>
+                            </svg>
+                        </a></li>
+                    <li class="client-list__item"><a href="#" class="client-list__link">
+                            <svg class="client-list__icon" width="106" height="60">
+                                <use href="./images/icons.svg#icon-client-6"></use>
+                            </svg>
+                        </a></li>
+                </ul>
+            </div>
         </section>
    </main>
 
@@ -406,5 +416,6 @@
    </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
