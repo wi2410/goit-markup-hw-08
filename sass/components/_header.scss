@@ -78,6 +78,11 @@
 
 .contact {
 
+    @media screen and (max-width:767px) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
     @media screen and (min-width: 1200px) {
         display: flex;
         margin-left: auto;
