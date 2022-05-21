@@ -1,12 +1,20 @@
 .footer {
+    text-align: center;
     background-color: var(--footer-bg-color);
     padding-top: 60px;
     padding-bottom: 60px;
+    margin: 0 auto;
+}
+
+.contact-container {
+    text-align: center;
+    margin-bottom: 60px;
 }
 .footer-nav {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
+    
+    // display: flex;
+    // flex-wrap: wrap;
+    // align-items: baseline;
 
 }
 address {
@@ -37,7 +45,7 @@ address {
 
 
 .communications {
-    margin-left: 70px;
+    margin-bottom: 60px;
 }
 .communications__title {
     font-weight: 700;
@@ -45,6 +53,7 @@ address {
     line-height: 16px;
     color: var(--accent-color);
     text-transform: uppercase;
+    
 }
 
 .social-media__link {
@@ -68,6 +77,7 @@ address {
 .social-media {
     margin-top: 20px;
     display: flex;
+    justify-content: center;
 }
 
 .social-media__item:not(:last-child) {
@@ -79,7 +89,7 @@ address {
     margin-left: auto;
 }
 .footer-input {
-    max-width: 360px;
+    width: 100%;
     padding: 15px 0 15px 16px;
     line-height: 20px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -105,20 +115,25 @@ address {
     margin-bottom: 20px;
 }
 
-.form-footer {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-}
+// .form-footer {
+//     display: flex;
+//     flex-wrap: wrap;
+//     align-items: flex-end;
+// }
 
-.footer-field {
-    display: flex;
-    flex-direction: column;
-    margin-right: 12px;
-}
+// .footer-field {
+//     display: flex;
+//     flex-direction: column;
+//     margin-right: 12px;
+// }
 
 .icon-send {
     fill: var(--accent-color);
+}
+
+.btn-footer {
+    display: flex;
+    justify-content: center;
 }
 
 .btn-subscribe {

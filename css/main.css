@@ -599,6 +599,7 @@ textarea::placeholder {
     font-size: 40px;
     line-height: 1.2;
     padding: 40px;
+    z-index: 20;
   }
 }
 
@@ -963,20 +964,16 @@ textarea::placeholder {
 }
 
 .footer {
+  text-align: center;
   background-color: var(--footer-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  margin: 0 auto;
 }
 
-.footer-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+.contact-container {
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 address {
@@ -1008,7 +1005,7 @@ address {
 }
 
 .communications {
-  margin-left: 70px;
+  margin-bottom: 60px;
 }
 
 .communications__title {
@@ -1048,6 +1045,9 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .social-media__item:not(:last-child) {
@@ -1060,7 +1060,7 @@ address {
 }
 
 .footer-input {
-  max-width: 360px;
+  width: 100%;
   padding: 15px 0 15px 16px;
   line-height: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1104,30 +1104,17 @@ address {
   margin-bottom: 20px;
 }
 
-.form-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-.footer-field {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-right: 12px;
-}
-
 .icon-send {
   fill: var(--accent-color);
+}
+
+.btn-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .btn-subscribe {
