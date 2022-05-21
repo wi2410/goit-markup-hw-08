@@ -477,6 +477,10 @@ textarea::placeholder {
 }
 
 /* Flex $ margin */
+.site-nav__item {
+  margin-bottom: 32px;
+}
+
 @media screen and (min-width: 768px) {
   .site-nav {
     display: -webkit-box;
@@ -599,10 +603,6 @@ textarea::placeholder {
   display: none;
 }
 
-.menu-container {
-  background-color: var(--accent-color);
-}
-
 .menu-container.is-open {
   display: block;
 }
@@ -613,8 +613,8 @@ textarea::placeholder {
     position: absolute;
     top: 100%;
     left: 0;
+    background-color: var(--accent-color);
     width: 100%;
-    height: 796px;
     font-size: 40px;
     line-height: 1.2;
     padding: 40px;
