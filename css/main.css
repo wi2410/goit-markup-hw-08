@@ -616,14 +616,10 @@ textarea::placeholder {
   display: none;
 }
 
-.menu-container.is-open {
-  display: block;
-}
-
 @media screen and (max-width: 767px) {
   .menu-container {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: var(--accent-color);
@@ -633,6 +629,10 @@ textarea::placeholder {
     line-height: 1.2;
     padding: 48px 40px;
     z-index: 20;
+    overflow-y: scroll;
+  }
+  .menu-container.is-open {
+    display: block;
   }
 }
 
@@ -1041,8 +1041,10 @@ textarea::placeholder {
   }
 }
 
-.contact-container {
-  margin-bottom: 60px;
+@media screen and (max-width: 1199px) {
+  .contact-container {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1083,8 +1085,10 @@ address {
   margin-bottom: 9px;
 }
 
-.communications {
-  margin-bottom: 60px;
+@media screen and (max-width: 1199px) {
+  .communications {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {

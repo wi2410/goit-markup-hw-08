@@ -11,7 +11,11 @@
 }
 
 .contact-container {
-    margin-bottom: 60px;
+    
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 60px;
+    }
+    
 }
 .footer-nav {
 
@@ -52,7 +56,9 @@ address {
 
 
 .communications {
-    margin-bottom: 60px;
+    @media screen and (max-width: 1199px) {
+            margin-bottom: 60px;
+        }
 
     @media screen and (min-width: 1200px){
         margin-left: 70px;   

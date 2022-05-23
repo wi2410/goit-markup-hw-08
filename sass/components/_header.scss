@@ -183,7 +183,6 @@
 
 .menu-button.is-open .icon-cross{
     display: block;
-    
 }
 
 .menu-button.is-open .icon-menu {
@@ -194,13 +193,11 @@
     
     
 
-    &.is-open {
-        display: block;
-    }
+    
 
     @media screen and (max-width: 767px){
         display: none;
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         background-color: var(--accent-color);
@@ -210,6 +207,11 @@
         line-height: 1.2;
         padding: 48px 40px;
         z-index: 20;
+        overflow-y: scroll;
+
+        &.is-open {
+                display: block;
+            }
         
     }
 
